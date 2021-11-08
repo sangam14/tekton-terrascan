@@ -321,4 +321,4 @@ tkn taskrun logs terrascan-pipeline-task-run-2rrkc -f -n tekton-pipelines
 
 What Next ?
 
-Vscode Extension Game Terrascan + Tektonpipline
+Use Vscode Extension Terrascan + Tektonpipline
