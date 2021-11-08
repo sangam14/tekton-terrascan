@@ -97,6 +97,8 @@ kubectl create secret docker-registry dockercreds --docker-server=https://index.
 
 # terrascan teketon pipeline task 
 
+create task file `terrascan-task.yml`
+
 ```
 apiVersion: tekton.dev/v1beta1
 kind: Task
@@ -111,6 +113,11 @@ spec:
        - >
         /go/bin/terrascan scan -r git -u https://github.com/sangam14/terrascan-argocd.git -i k8s -t k8s 
 
+```
+Apply kubectl 
+
+```
+kubectl apply -f terrascan-task.yml
 ```
 
 # start tekton pipeline task 
